@@ -19,6 +19,7 @@
 		63DF04B81BFB1A2D00A40568 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DF04B71BFB1A2D00A40568 /* Media.xcassets */; };
 		63DF04C01BFB618E00A40568 /* ModelCurvesGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF04BF1BFB618E00A40568 /* ModelCurvesGenerator.m */; };
 		63DF04C41BFB677E00A40568 /* NSString+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF04C31BFB677E00A40568 /* NSString+Random.m */; };
+		63DF04CB1BFB736E00A40568 /* MathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF04CA1BFB736E00A40568 /* MathUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		63DF04C11BFB61A200A40568 /* ModelCurvesGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelCurvesGenerator.h; sourceTree = "<group>"; };
 		63DF04C21BFB677E00A40568 /* NSString+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Random.h"; sourceTree = "<group>"; };
 		63DF04C31BFB677E00A40568 /* NSString+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Random.m"; sourceTree = "<group>"; };
+		63DF04C71BFB6F8900A40568 /* MathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtils.h; sourceTree = "<group>"; };
+		63DF04CA1BFB736E00A40568 /* MathUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				63DF049B1BFA837200A40568 /* UMakeInterviewViewController.m */,
 				63DF04BF1BFB618E00A40568 /* ModelCurvesGenerator.m */,
 				63DF04C11BFB61A200A40568 /* ModelCurvesGenerator.h */,
+				63DF04C71BFB6F8900A40568 /* MathUtils.h */,
+				63DF04CA1BFB736E00A40568 /* MathUtils.m */,
 			);
 			path = uMakeInterview;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				63DF04B31BFA879500A40568 /* DrawingModel.m in Sources */,
 				63DF04B61BFA90E700A40568 /* Curve.m in Sources */,
 				63DF04AD1BFA85DF00A40568 /* DrawingView.m in Sources */,
+				63DF04CB1BFB736E00A40568 /* MathUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

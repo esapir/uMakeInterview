@@ -1,5 +1,6 @@
 #import "Curve.h"
 #import "NSString+Random.h"
+#import "MathUtils.h"
 
 @implementation Curve
 
@@ -14,6 +15,23 @@
     }
     
     return self;
+}
+
+- (CGFloat)curveLength
+{
+    CGFloat length = 0;
+    
+    NSArray<NSValue*>* rawPoints = self.curveRawPoints;
+    
+    for (int i = 0; i < rawPoints.count - 1; i++)
+    {
+        CGPoint currPoint = [rawPoints objectAtIndex:i].CGPointValue;
+        CGPoint nextPoint = [rawPoints objectAtIndex:i + 1].CGPointValue;
+        
+        length += CGPointsDistance(currPoint, nextPoint);
+    }
+    
+    return length;
 }
 
 - (NSArray*)curveRawPoints

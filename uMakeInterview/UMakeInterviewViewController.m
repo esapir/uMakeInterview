@@ -1,6 +1,7 @@
 #import "UMakeInterviewViewController.h"
 #import "DrawingView.h"
 #import "ModelCurvesGenerator.h"
+#import "MathUtils.h"
 
 @interface UMakeInterviewViewController ()
 
@@ -51,8 +52,6 @@
     [self addKnobForCurve:newCurve];
 }
 
-
-
 #pragma mark - image knob presenter for curve
 
 - (void)addKnobForCurve:(Curve*)curve
@@ -67,7 +66,7 @@
 }
 
 - (CGPoint)imageKnobPointForCurve:(Curve*)curve
-{
+{    
     return curve.points.firstObject.CGPointValue;
 }
 
