@@ -66,7 +66,7 @@
 }
 
 - (CGPoint)imageKnobPointForCurve:(Curve*)curve
-{    
+{
     return curve.points.firstObject.CGPointValue;
 }
 

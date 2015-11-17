@@ -10,8 +10,12 @@ typedef NS_ENUM(NSInteger, CurveType) {
 
 typedef NSArray<NSValue*> CurvePoints;
 
-@property (strong, nonatomic) CurvePoints* points;
 @property (nonatomic) CurveType type;
+
+//points that represents the curve
+@property (strong, nonatomic) CurvePoints* points;
+
+//unique id of the curve
 @property (nonatomic) NSString* id;
 
 - (instancetype)initWithPoints:(CurvePoints*)points type:(CurveType)type;
